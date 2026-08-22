@@ -3,7 +3,7 @@
 A responsive front-end e-commerce website for browsing and purchasing music equipment in Bole, Addis Ababa, Ethiopia.
 you can access the website with https://music-shop-project.vercel.app/
 
-my Loom project demonstration https://www.loom.com/share/c2684f5eec4d41eeaeccf62331434f93
+my Loom project demonstration https://www.loom.com/share/4c65f83f88d340b6932b556a8a5ba6c6
 
 ## 📌 Project Overview
 

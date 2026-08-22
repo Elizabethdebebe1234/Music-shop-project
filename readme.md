@@ -1,6 +1,7 @@
 # 🎵 Bole Music Shop
 
 A responsive front-end e-commerce website for browsing and purchasing music equipment in Bole, Addis Ababa, Ethiopia.
+you can access the website with https://music-shop-project.vercel.app/
 
 ## 📌 Project Overview
 

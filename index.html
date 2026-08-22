@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bole Music Shop</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Bole Music Shop</h1>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+
+        <input
+          id="search"
+          type="search"
+          placeholder="Search for music..."
+          aria-label="Search for music products"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Find Your Perfect Sound 🎵</h2>
+
+        <p>Quality music equipment in Bole, Addis Ababa.</p>
+      </section>
+
+      <!-- Category filter -->
+      <section id="category-section" aria-label="Product category filter">
+        <label for="category"> Category </label>
+
+        <select id="category">
+          <option value="all">All Categories</option>
+
+          <option value="guitars">Guitars</option>
+
+          <option value="keyboards">Keyboards</option>
+
+          <option value="drums">Drums</option>
+
+          <option value="audio">Audio</option>
+
+          <option value="accessories">Accessories</option>
+        </select>
+      </section>
+
+      <!-- Products and cart -->
+      <div class="shop-layout">
+        <!-- Products -->
+        <section id="products-section" aria-labelledby="products-title">
+          <h2 id="products-title">Our Products</h2>
+
+          <div id="products-container">
+            <p id="loading-message">Loading products...</p>
+          </div>
+
+          <p id="empty-message" hidden>No products found.</p>
+        </section>
+
+        <!-- Shopping cart -->
+        <aside id="cart" aria-labelledby="cart-title">
+          <h2 id="cart-title">🛒 Your Cart</h2>
+
+          <!-- JavaScript will put cart items here -->
+          <div id="cart-items">
+            <p id="empty-cart">Your cart is empty.</p>
+          </div>
+
+          <!-- Cart total -->
+          <div class="cart-summary">
+            <p>
+              Total:
+              <strong id="cart-total"> 0 ETB </strong>
+            </p>
+
+            <button id="checkout-button" type="button" disabled>
+              Checkout
+            </button>
+          </div>
+        </aside>
+
+        <section id="checkout-section">
+          <h2>Checkout</h2>
+
+          <form id="checkout" novalidate>
+            <label for="name"> Name </label>
+
+            <input id="name" type="text" placeholder="Enter your name" />
+
+            <label for="phone"> Phone (TeleBirr) </label>
+
+            <input id="phone" type="tel" placeholder="09xxxxxxxx" />
+
+            <label for="area"> Delivery area </label>
+
+            <select id="area">
+              <option value="Bole">Bole</option>
+              <option value="Kazanchis">Kazanchis</option>
+              <option value="Megenagna">Megenagna</option>
+            </select>
+
+            <p id="form-error" class="error" aria-live="polite"></p>
+
+            <button type="submit">Place Order</button>
+          </form>
+
+          <p id="confirmation" class="confirmation"></p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Bole Music Shop. TeleBirr payments available.</p>
+
+      <p>Bole, Addis Ababa, Ethiopia</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

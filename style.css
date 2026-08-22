@@ -1,0 +1,579 @@
+/* ===============================
+   Bole Music Shop - Main Styles
+================================ */
+
+body {
+  background-color: #010913;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #0a3d62;
+
+  padding: 1rem 2rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* ===============================
+   SEARCH
+================================ */
+
+.search-box {
+  display: flex;
+  align-items: center;
+
+  background-color: #051723;
+
+  border: 1px solid #373b50;
+  border-radius: 8px;
+
+  padding: 0.6rem 0.8rem;
+
+  width: 280px;
+}
+
+.search-icon {
+  margin-right: 0.8rem;
+}
+
+#search {
+  width: 100%;
+
+  background: transparent;
+  color: white;
+
+  border: none;
+  outline: none;
+
+  font-size: 1rem;
+}
+
+#search::placeholder {
+  color: #a7aeae;
+}
+
+/* ===============================
+   HERO
+================================ */
+
+.hero {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ===============================
+   SHOP LAYOUT
+================================ */
+
+.shop-layout {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 1.5rem;
+
+  align-items: start;
+
+  padding: 1rem;
+}
+
+/* ===============================
+   CATEGORY
+================================ */
+
+#category-section {
+  background-color: #0a3d62;
+
+  border-radius: 8px;
+
+  margin: 1rem 0;
+  padding: 1rem;
+
+  grid-column: 1 / -1;
+}
+
+#category-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#category-section select {
+  background-color: #051723;
+  color: white;
+
+  border: 1px solid #373b50;
+  border-radius: 6px;
+
+  padding: 0.6rem;
+}
+
+/* ===============================
+   PRODUCTS
+================================ */
+
+#products-container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+}
+
+.product-card {
+  background-color: #0a3d62;
+
+  border-radius: 8px;
+
+  padding: 1rem;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+.product-image {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 6px;
+}
+
+.product-name {
+  font-weight: bold;
+
+  font-size: 1.2rem;
+
+  margin: 0.5rem 0;
+}
+
+.product-price {
+  color: #a7aeae;
+
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
+}
+
+.add-to-cart {
+  background-color: #373b50;
+
+  color: white;
+
+  border: none;
+
+  padding: 0.7rem;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  margin-top: auto;
+}
+
+.add-to-cart:hover {
+  background-color: #0a3d62;
+
+  border: 1px solid #a7aeae;
+}
+
+/* ===============================
+   CART CARD
+================================ */
+
+#cart {
+  background-color: #051723;
+
+  border: 1px solid #0a3d62;
+
+  border-radius: 12px;
+
+  padding: 1.2rem;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+
+  /* Stay under the header while scrolling */
+  position: sticky;
+  top: 90px;
+
+  align-self: start;
+
+  z-index: 900;
+}
+
+/* ===============================
+   CART TITLE
+================================ */
+
+#cart-title {
+  font-size: 1.3rem;
+
+  margin: 0;
+
+  font-weight: bold;
+}
+
+/* If your HTML has a cart header */
+
+.cart-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid #373b50;
+}
+
+#cart-count {
+  background-color: #0a3d62;
+
+  color: #a7aeae;
+
+  padding: 0.35rem 0.6rem;
+
+  border-radius: 20px;
+
+  font-size: 0.8rem;
+
+  font-weight: bold;
+}
+
+/* ===============================
+   CART ITEMS
+================================ */
+
+#cart-items {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Each cart product */
+
+.cart-line {
+  border-bottom: 1px solid #373b50;
+
+  padding: 1rem 0;
+}
+
+.cart-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 1rem;
+}
+
+.cart-item-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.45rem;
+}
+
+.cart-item-info strong {
+  font-size: 1rem;
+}
+
+.cart-price {
+  color: #a7aeae;
+
+  font-size: 0.8rem;
+}
+
+.cart-item-total {
+  white-space: nowrap;
+
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   QUANTITY CONTROLS
+================================ */
+
+.cart-controls {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid #373b50;
+
+  border-radius: 5px;
+
+  background-color: #010913;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.qty-btn:hover {
+  background-color: #0a3d62;
+}
+
+.cart-qty {
+  min-width: 25px;
+
+  text-align: center;
+
+  font-weight: bold;
+}
+
+/* ===============================
+   REMOVE BUTTON
+================================ */
+
+.rm {
+  border: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  color: #e57373;
+
+  cursor: pointer;
+
+  font-size: 0.85rem;
+
+  text-align: left;
+}
+
+.rm:hover {
+  color: #ff5252;
+
+  text-decoration: underline;
+}
+
+/* ===============================
+   EMPTY CART
+================================ */
+
+#empty-cart {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: #a7aeae;
+
+  padding: 2rem 0;
+}
+
+/* ===============================
+   CART SUMMARY
+================================ */
+
+.cart-summary {
+  border-top: 1px solid #373b50;
+
+  margin-top: 1rem;
+
+  padding-top: 1rem;
+}
+
+.cart-summary {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+#cart-total {
+  color: #a7aeae;
+
+  font-size: 1.3rem;
+
+  font-weight: bold;
+}
+
+/* ===============================
+   CHECKOUT BUTTON
+================================ */
+
+#checkout-button {
+  width: 100%;
+
+  padding: 0.8rem 1rem;
+
+  margin-top: 1rem;
+
+  background-color: #0a3d62;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  font-size: 1rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+#checkout-button:not(:disabled):hover {
+  background-color: #373b50;
+
+  transform: none;
+}
+
+#checkout-button:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.5;
+}
+
+/* ===============================
+   FORM ERRORS
+================================ */
+
+.error {
+  color: #e57373;
+
+  margin: 10px 0;
+
+  min-height: 20px;
+}
+
+.confirmation {
+  margin-top: 15px;
+
+  font-weight: bold;
+}
+
+/* ===============================
+   SEARCH RESULTS
+================================ */
+
+.no-results {
+  text-align: center;
+
+  padding: 30px;
+
+  color: #a7aeae;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+  background-color: #051723;
+
+  padding: 1.5rem;
+
+  text-align: center;
+
+  margin-top: 2rem;
+}
+
+/* ===============================
+   MAIN
+================================ */
+
+main {
+  display: block;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 999px) {
+  #products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 799px) {
+  header {
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+  .search-box {
+    width: 90%;
+  }
+
+  .shop-layout {
+    grid-template-columns: 1fr;
+  }
+
+  #cart {
+    position: sticky;
+
+    top: 130px;
+  }
+}
+
+@media (max-width: 599px) {
+  #products-container {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-layout {
+    padding: 0.7rem;
+  }
+
+  #cart {
+    top: 140px;
+  }
+}

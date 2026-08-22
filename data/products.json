@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Acoustic Guitar",
+    "category": "guitars",
+    "price": 4500,
+    "description": "Quality acoustic guitar for beginners and professionals.",
+    "image": "images/acoustic-guitar.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Electric Guitar",
+    "category": "guitars",
+    "price": 8500,
+    "description": "Stylish electric guitar with a clear and powerful sound.",
+    "image": "images/electric-guitar.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Digital Keyboard",
+    "category": "keyboards",
+    "price": 12000,
+    "description": "Portable digital keyboard suitable for practice and performances.",
+    "image": "images/keyboard.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Electronic Drum Set",
+    "category": "drums",
+    "price": 15000,
+    "description": "Compact electronic drum set for home practice and recording.",
+    "image": "images/drum-set.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Studio Microphone",
+    "category": "audio",
+    "price": 6500,
+    "description": "Professional microphone for recording vocals and instruments.",
+    "image": "images/microphone.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "category": "audio",
+    "price": 3500,
+    "description": "Portable speaker with clear sound for music and events.",
+    "image": "images/speaker.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Guitar Strings",
+    "category": "accessories",
+    "price": 600,
+    "description": "Durable replacement strings for acoustic and electric guitars.",
+    "image": "images/guitar-strings.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Guitar Stand",
+    "category": "accessories",
+    "price": 1200,
+    "description": "Strong and lightweight stand for safely storing your guitar.",
+    "image": "images/guitar-stand.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Keyboard Stand",
+    "category": "accessories",
+    "price": 1800,
+    "description": "Adjustable stand designed to securely hold your keyboard.",
+    "image": "images/keyboard-stand.jpg"
+  }
+]
